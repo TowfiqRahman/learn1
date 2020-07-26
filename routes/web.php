@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test', function () {
+    return view('test');
+});
+
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
+Route::get('/hi', function () {
+    return "HI returned from the string directly!";
+});
+
+Route::get('/jsonarray', function () {
+    return ['foo' => 'bar'];
+});
