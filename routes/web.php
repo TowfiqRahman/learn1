@@ -28,7 +28,9 @@ Route::get('/test', function () {
     ]);
 });
 
-Route::get('/posts/{post}', function ($post) {
+Route::get('/posts/{post}', 'PostsController@show');
+
+/*Route::get('/posts/{post}', function ($post) {
 
     $posts = [
       'my-first-post' => 'Hello, this is my first bloge post',
@@ -43,7 +45,7 @@ Route::get('/posts/{post}', function ($post) {
       'post' => $posts[$post]
     ]);
 });
-
+*/
 Route::get('/welcome', function () {
     return view('welcome');
 });
