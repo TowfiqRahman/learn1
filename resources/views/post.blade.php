@@ -68,7 +68,7 @@
         <div class="title m-b-md">
             My bloge posts
         </div>
-          <h3>  {{ $post }} </h3>
+          <h3>  {{ $post->body $post->created_at}} </h3>
 
     </div>
 
