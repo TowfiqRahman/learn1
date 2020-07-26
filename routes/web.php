@@ -28,6 +28,16 @@ Route::get('/test', function () {
     ]);
 });
 
+Route::get('/posts/{post}', function ($post) {
+    $posts = [
+      'my-first-post' => 'Hello, this is my first bloge post',
+      'my-second-post' => 'Hello, this is my second blog post'
+    ];
+    return view('post',[
+      'post' => $posts[$post] 
+    ]);
+});
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
