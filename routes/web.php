@@ -34,7 +34,7 @@ Route::get('/posts/{post}', function ($post) {
       'my-second-post' => 'Hello, this is my second blog post'
     ];
     return view('post',[
-      'post' => $posts[$post] 
+      'post' => $posts[$post] ?? 'Nothing here yet.'
     ]);
 });
 
