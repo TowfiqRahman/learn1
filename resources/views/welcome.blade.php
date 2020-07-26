@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel 6 learn with Laracast using learn1 7.21.0
                 </div>
 
                 <div class="links">
