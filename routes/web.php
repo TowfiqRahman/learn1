@@ -22,9 +22,9 @@ Route::get('/test', function () {
 });
 
 Route::get('/test', function () {
-    $name = request('name');
+    //$name = srequest('name');
     return view('test',[
-      'name' => $name
+      'nameee' => request('name')
     ]);
 });
 

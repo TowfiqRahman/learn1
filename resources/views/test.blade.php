@@ -68,7 +68,7 @@
         <div class="title m-b-md">
             testing to understand the need of layout
         </div>
-          <h3> {{ $name }}  </h3>
+          <h3> {{ $nameee }}  </h3>
         <div class="links">
             <a href="https://laravel.com/docs">Docs</a>
             <a href="https://laracasts.com">Laracasts</a>
