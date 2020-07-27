@@ -22,7 +22,9 @@ Route::get('/welcome1', function () {
 });
 
 Route::get('/about1', function () {
-    return view('about1');
+    return view('about1',[
+      'articles' => App\Article::take(3)->latest()->get()
+    ]);
 });
 
 Route::get('/contact', function () {
