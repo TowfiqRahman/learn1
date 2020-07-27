@@ -21,6 +21,8 @@ Route::get('/welcome1', function () {
     return view('welcome1');
 });
 
+Route::get('/articles/{article}', 'ArticlesController@show');
+
 Route::get('/about1', function () {
     return view('about1',[
       'articles' => App\Article::take(3)->latest()->get()

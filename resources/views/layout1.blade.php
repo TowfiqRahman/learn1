@@ -34,8 +34,8 @@ Released   : 20140225
           <li class= " {{ Request::path() === 'welcome1' ? 'current_page_item' : '' }}"><a href="/laracast/learn1/public/welcome1" accesskey="1" title="">Homepage</a></li>
           <li class= " {{ Request::path() === '' ? 'current_page_item' : '' }}"><a href="#" accesskey="2" title="">Our Clients</a></li>
           <li class= " {{ Request::path() === 'about1' ? 'current_page_item' : '' }}"><a href="/laracast/learn1/public/about1" accesskey="3" title="">About Us</a></li>
-          <li><a href="#" accesskey="4" title="">Careers</a></li>
-          <li><a href="#" accesskey="5" title="">Contact Us</a></li>
+          <li class= " {{ Request::path() === 'articals' ? 'current_page_item' : '' }}"><a href="#" accesskey="4" title="">Articals</a></li>
+          <li class= " {{ Request::path() === '' ? 'current_page_item' : '' }}"><a href="#" accesskey="5" title="">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -44,7 +44,7 @@ Released   : 20140225
 
 
   @yield('content')
-  
+
   <div id="copyright" class="container">
     <p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
   </div>
