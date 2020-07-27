@@ -17,11 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/articles', 'ArticlesController@index');
-
 Route::get('/welcome1', function () {
     return view('welcome1');
 });
+
+Route::get('/articles', 'ArticlesController@index');
 
 Route::get('/articles/{article}', 'ArticlesController@show');
 
